@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fieldsets y legends</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="">
+        <h2>Formulario de contacto</h2>
+        <!-- SIMPLE INPUTS -->
+        <fieldset>
+            <legend>INFORMACION BASICA</legend>
+            <div class="form_input">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" placeholder="Misaint Murillo" id="nombre">
+            </div>
+            <div class="form_input">
+                <label for="email">Email</label>
+                <input type="email" placeholder="ejemplo@gmail.com" id="email">
+            </div>
+            <div class="form_input">
+                <label for="asunto">Asunto</label>
+                <input type="asunto" placeholder="El asunto de tu mensaje" id="asunto">
+            </div>
+        </fieldset>
+        <!-- SELECT & OPTION -->
+        <div class="form_input">
+            <label>Tipo de usuario
+                <select>
+                    <option value="user1">Seguidor/a</option>
+                    <option value="user2">Empresa</option>
+                    <option value="user3">Otros</option>
+                </select>
+            </label>
+        </div>
+        <!-- DATALIST & OPTION-->
+        <div class="form_input">
+            <label>Referente
+                <input list="referente" name="referente">
+                <datalist id="referente" name="type-of-user">
+                    <option value="Misaint">(Un creador de contenido)</option>
+                    <option value="Una empresa"></option>
+                    <option value="Un amigo"></option>
+                    <option value="Otros..."></option>
+                </datalist>
+            </label>
+        </div>
+        <!-- TEXTAREA-->
+        <div class="form_input">
+            <label for="mensaje">Mensaje</label>
+            <textarea rows="7" placeholder="Deja tu mensaje aqui..." id="mensaje"></textarea>
+        </div>
+        <div class="form_input">
+            <label for="checkbox">Acepto los terminos y condiciones</label>
+            <input type="checkbox" id="checkbox" class="checkbox">
+        </div>
+    </form>
+</body>
+</html>
