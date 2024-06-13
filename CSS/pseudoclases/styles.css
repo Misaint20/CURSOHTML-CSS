@@ -1,0 +1,105 @@
+/*Elemento raiz (va solo)*/
+:root {
+    color: #999;
+}
+
+h1 {
+    color: #48e;
+    font-family: sans-serif;
+    margin: 40px;
+}
+
+
+/*Cuando pasamos el mouse por encima de h1*/
+h1:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+
+/*Mientras se este clickeando H1*/
+h1:active {
+    background-color: #999;
+    color: #fff;
+}
+
+ul {
+    background-color: #999;
+    padding: 0;
+}
+
+/*Seleccionando solo el primer LI*/
+li:first-child {
+    color: #f00;
+}
+
+/*Seleccionando al segundo LI - seleccionar cualquiera que no sea primero o ultimo*/
+li:nth-child(2) {
+    color: #0f0;
+}
+
+/*Seleccionar elementos salteados*/
+li:nth-child(3n) {
+    color: #0f8;
+}
+
+li:nth-child(2n) {
+    background-color: #ddd;
+    padding: 5px;
+}
+
+/*Seleccionando el ultimo LI*/
+li:last-child {
+    color: #00f;
+}
+
+/*Selecciona solo los Li*/
+li:nth-of-type(1) {
+    color: brown;
+}
+
+/*Seleccionando los LI dentro de lista pero que no tengan la clase excluir*/
+.lista li:not(.excluir) {
+    color: #f58;
+}
+
+
+div {
+    border: 2px solid black;
+}
+
+/*Seleccionando al DIV solo en caso de estar vacio*/
+div:empty {
+    border: none;
+}
+
+/*******************************************************/
+input[type="checkbox"] {
+    margin: 50px;
+}
+
+input[type="checkbox"]:checked {
+    margin: 0;
+}
+
+
+/*Seleccionando enlaces no visitados*/
+a:link {
+    color: #f00;
+}
+
+/*Seleccionando enlaces visitados*/
+a:visited {
+    color: #0f0;
+}
+
+
+/*Seleccionando inputs invalidos*/
+input:invalid {
+    color: #f00;
+}
+
+/*Seleccionando inputs validos*/
+input:valid {
+    color: #0f0;
+}

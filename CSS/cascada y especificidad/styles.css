@@ -1,0 +1,20 @@
+h1 {
+    color: red;
+}
+
+#titulo {
+    color: green;
+}
+
+.titulo {
+    color: red;
+}
+
+h1 {
+    color: blue !important;
+}
+
+/*Con la misma especificidad el ultimo atributo es el que selecciona*/
+
+/*!important es lo mas fuerte que existe y sobreescribe cualquier otro estilo*/
+
